@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![giovannibaratta](https://circleci.com/gh/giovannibaratta/Project-4---Operationalize-a-Machine-Learning-Microservice-API.svg?style=svg)](https://app.circleci.com/pipelines/github/giovannibaratta/Project-4---Operationalize-a-Machine-Learning-Microservice-API)
 
 ## Project Overview
 
