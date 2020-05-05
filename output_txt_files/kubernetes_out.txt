@@ -1,1 +1,16 @@
-<paste log output from Kubernetes-mediated prediction, here>
+gio@gio-desktop:~/Desktop/Project-4---Operationalize-a-Machine-Learning-Microservice-API$ ./run_kubernetes.shpod/udacity-project4-predictionapp created
+NAME                             READY   STATUS              RESTARTS   AGE
+udacity-project4-predictionapp   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+
+gio@gio-desktop:~/Desktop/Project-4---Operationalize-a-Machine-Learning-Microservice-API$ kubectl get pod
+NAME                             READY   STATUS    RESTARTS   AGE
+udacity-project4-predictionapp   1/1     Running   0          19s
+
+gio@gio-desktop:~/Desktop/Project-4---Operationalize-a-Machine-Learning-Microservice-API$ ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "udacity-project4-predictionapp" already exists
+NAME                             READY   STATUS    RESTARTS   AGE
+udacity-project4-predictionapp   1/1     Running   0          22s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000

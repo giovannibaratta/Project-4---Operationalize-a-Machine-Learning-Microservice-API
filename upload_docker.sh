@@ -5,11 +5,13 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=giovannibaratta/udacity_project4_prediction_app
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+sudo docker login
+sudo docker tag prediction_app:latest $dockerpath:latest
 
 # Step 3:
-# Push image to a docker repository
+sudo docker push $dockerpath:latest
